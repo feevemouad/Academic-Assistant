@@ -1,0 +1,29 @@
+minio:
+  endpoint: 'localhost:9000'
+  access_key: 'minioadmin'
+  secret_key: 'minioadmin'
+  secure: false
+  docs_bucket: 'documents'
+
+text_chunker:
+  chunk_size: 1500
+  chunk_overlap: 200
+
+embedding_model:
+  endpoint: "http://localhost:11434"
+  model_name: "nomic-embed-text"
+  dimension: 768 
+
+chat_model:
+  endpoint: "http://localhost:11434"
+  model_name: "llama3.1"
+  stream: False
+
+vector_store:
+  dimension: 768  
+
+langsmith:
+  LANGCHAIN_TRACING_V2: "true"
+  LANGCHAIN_ENDPOINT : "https://api.smith.langchain.com"
+  LANGCHAIN_API_KEY : "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"
+  LANGCHAIN_PROJECT : "kbasellms"

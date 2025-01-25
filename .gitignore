@@ -1,0 +1,29 @@
+# Exclude minio.exe
+data/
+minio.exe
+
+# Python and development files
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.swp
+.env/
+venv/
+env/
+assistenv/  # Your virtual environment folder
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Data and logs
+data/  # Exclude local data storage
+*.log
+*.sqlite
+
+# MinIO internal files (if needed)
+.minio.sys/
+
+# System files
+.DS_Store
+Thumbs.db
